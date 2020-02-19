@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900&display=swap');
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none ;
+}
+
+/* Header part start */
+
+header{
+    background-color: #f6f9f9;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #2d3950;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #5fc3ff;
+}
+
+
+.navbar{
+    padding: 20px 0;
+}
+
+/* Header part end */
+
+/* Banner part start */
+
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+.hg{
+    height: 700px;
+   
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    color: #fff;
+    font-size: 75px;
+}
+.content p{
+    color: #fff;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.content span{
+    display: inline-block;
+    background: #15a4fa;
+    height: 3px;
+    width: 100%;
+}
+.btn-custom{
+    background: transparent;
+    border: 1px solid #15a4fa;
+}
+.btn-custom:hover{
+    background: #15a4fa;
+}
+.icon{
+    color: #fff;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    animation:icon-ani 1s linear infinite;
+    animation-direction: alternate;
+}
+.icon i{
+    color: #fff;
+    font-size: 24px;
+}
+@keyframes icon-ani{
+    0%{
+        transform: translate(-50%, 0%);
+    }
+    100%{
+        transform: translate(-50%, -100%);
+    }
+}
+
+/* Banner part end */
+
+/* Simple part start */
+
+.simple h1{
+    color: #2d3950;
+    font-weight: 400;
+    font-size: 40px;
+}
+.simple p{
+    color: #999999;
+    font-size: 18px;
+}
+.simple{
+    background-color: #f6f9f9;
+}
+
+/* Simple part end */
+
+/* Feature part start */
+
+.feature{
+
+}
+
+.icon-box{
+
+height: 90px;
+
+width: 90px;
+
+color: #fff;
+
+font-size: 50px;
+
+text-align: center;
+
+line-height: 90px;
+margin: auto;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+1,48baff+50,5fc3ff+51,5fc3ff+100 */
+background: rgb(72,186,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(72,186,255,1) 1%, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 51%, rgba(95,195,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(72,186,255,1) 1%,rgba(72,186,255,1) 50%,rgba(95,195,255,1) 51%,rgba(95,195,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(72,186,255,1) 1%,rgba(72,186,255,1) 50%,rgba(95,195,255,1) 51%,rgba(95,195,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+.icon-box i{
+
+}
+.feature-content{
+    
+}
+.feature-content h4{
+    color: #2d3950;
+}
+.feature-content p{
+    color: #999999;
+}
+
+/* Feature part end */
+
+/* Showcase part start */
+
+.showcase{
+    background-color: #f6f9f9;
+    position: relative;
+}
+.show-img{
+    position: relative;
+    
+}
+.show-img:hover .showcase-icon{
+    opacity: 1;
+}
+.showcase h2{
+    color: #2d3950;
+    font-weight: 400;
+    font-size: 40px;
+}
+.showcase p{
+    color: #909090;
+}
+.showcase-img{
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.showcase-img::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0;
+    top: 0;
+    left: 0;
+    background: #48baff87;
+    transition: all .4s ease;
+}
+.showcase-img:hover::after{
+    bottom: 100%;
+    height: 100%;
+}
+.showcase-img:hover img{
+    transform: scale(1.2);
+    transition: all .4s ease;
+}
+.showcase-img img{
+
+}
+.showcase-icon{
+opacity: 0;
+position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 20px;
+}
+.showcase-icon i{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Showcase part end */
+
+/* Contact part start */
+
+.contact{
+    background-image: url(../images/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2d3950d1;
+}
+.contact-content{
+
+color: #fff;
+
+text-align: center;
+
+margin: 30px 0;
+
+}
+.contact-content h2{
+    font-weight: 400;
+    font-size: 40px;
+
+}
+.contact-content p{
+
+}
+form input{
+
+width: 100%;
+
+margin-top: 10px;
+
+height: 35px;
+
+border-radius: 5px;
+
+border: none;
+
+background: transparent;
+
+border: 1px solid #15a4fa;
+
+padding: 10px;
+}
+input[type=checkbox]{
+    height: 15px;
+    width: 10px;
+    margin: 0;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+form textarea{
+margin-top: 10px;
+width: 100%;
+
+background: transparent;
+
+border: none;
+
+border: 1px solid #15a4fa;
+border-radius: 5px;
+}
+.subscribe{
+
+}
+.subscribe ul{
+
+}
+.subscribe li{
+    float: left;
+    color: #fff;
+}
+.btn-contact{
+    float: right;
+    margin: 0;
+    color: #fff;
+    padding: 5px 30px;
+}
+
+
+.footer{
+    background-color: #f6f9f9;
+    height: 100px;
+}
+.footer-icon{
+    height: 45px;
+    background-color: #15a4fa;
+    width: 45px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+.footer-left{
+    
+}
+.footer-right{
+    
+}
+.footer-right ul{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.footer-right ul li{
+   
+}
+
+.footer-left ul li a{
+    font-size: 14px;
+    color: #999999; 
+    text-transform: uppercase;
+}
+.footer-right ul li a{
+    color:#fff;
+    font-size: 24px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
